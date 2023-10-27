@@ -30,10 +30,14 @@ When the new querey button is clicked, a new completely window will appear. This
   - In the right-bottom part a text-box where the user wont be able to write but where the message of the result of the query will be shown. That is, where the errors or success will appear.
   - In the left-bottom part two buttons:
       - One for running the query
-      - Other for cleaning the message box
+      - Other for cleaning the message and text box
 <img width="558" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/030c9b60-eea5-4947-9121-3524858c575b">
-
-
+#### Running The New Query
+When running the query, if it is a `Select` query, the application will show the table as it is shown when the run table action. The errors happened in the query will be shown in the message-box. Here there are some examples of how the run query works:
+<img width="356" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/17c34037-5a86-4940-a369-356c7923c2b5">
+<img width="645" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/a33a0276-e18b-4346-b7f7-fd7326730be5">
+<img width="476" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/f419f08b-6db9-4e0b-a840-36133d3989e9">
+<img width="405" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/de140205-2d1e-46e3-a211-7c4480787cf0">
 ## Patterns
 The patterns used in this project are:
 ### Lazy
