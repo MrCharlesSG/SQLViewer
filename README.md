@@ -53,4 +53,8 @@ When running the query, if it is a `Select` query, the application will show the
 ## Patterns
 The patterns used in this project are:
 ### Lazy
-In orther
+The Lazy pattern it is mostly used by the tree view. So this tree view will load only what he needs when a node is expanded. All the entities (tables, views and procedures) inside the `database` object are lazy properties.
+### Factory
+The factory pattern is used to create objects that implements the `IRepository` interface. 
+### Singleton
+The factory of `IRepository`s is a singleton.
