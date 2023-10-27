@@ -14,16 +14,23 @@ Once the user has been aunthenticated so username and passwords are correct, the
       - The third and last is to run a new query.
   - On the left side there is a tree view of the tables, views and procedures in the Data Base.
   - On the right side there is a text box where the procedures's code will be shown.
+
 <img width="693" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/ce88cfc8-da58-40c8-a97e-7c1a1d9ade23">
+
 ### Run Table
 When the run button is clicked, automaticaly, the content of the selected table or view will be shown.
+
 <img width="694" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/42fb348c-b3f4-4c2b-a76e-96aafe4c9453">
+
 ### Save
 When the save button is clicked, the user will have the option to choose where to save the table or view in a XML format.
+
 <img width="611" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/f5c4ff61-98c1-47ae-8c58-0ffa23003967">
 
 This is how the XML file will look like:
+
 <img width="801" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/25445ac3-9409-4239-8c55-1c74cf6087d6">
+
 ### New Query
 When the new querey button is clicked, a new completely window will appear. This window consist in:
   - In the top part a text-box where the user will write the query.
@@ -31,9 +38,12 @@ When the new querey button is clicked, a new completely window will appear. This
   - In the left-bottom part two buttons:
       - One for running the query
       - Other for cleaning the message and text box
+  
 <img width="558" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/030c9b60-eea5-4947-9121-3524858c575b">
+
 #### Running The New Query
 When running the query, if it is a `Select` query, the application will show the table as it is shown when the run table action. The errors happened in the query will be shown in the message-box. Here there are some examples of how the run query works:
+
 
 <img width="356" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/17c34037-5a86-4940-a369-356c7923c2b5">
 <img width="645" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/a33a0276-e18b-4346-b7f7-fd7326730be5">
