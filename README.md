@@ -21,8 +21,17 @@ When the run button is clicked, automaticaly, the content of the selected table 
 ### Save
 When the save button is clicked, the user will have the option to choose where to save the table or view in a XML format.
 <img width="611" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/f5c4ff61-98c1-47ae-8c58-0ffa23003967">
+
 This is how the XML file will look like:
 <img width="801" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/25445ac3-9409-4239-8c55-1c74cf6087d6">
+### New Query
+When the new querey button is clicked, a new completely window will appear. This window consist in:
+  - In the top part a text-box where the user will write the query.
+  - In the right-bottom part a text-box where the user wont be able to write but where the message of the result of the query will be shown. That is, where the errors or success will appear.
+  - In the left-bottom part two buttons:
+      - One for running the query
+      - Other for cleaning the message box
+<img width="558" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/030c9b60-eea5-4947-9121-3524858c575b">
 
 
 ## Patterns
