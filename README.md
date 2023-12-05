@@ -1,11 +1,34 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [SQLViewer](#sqlviewer)
+   * [Context](#context)
+   * [Functionality](#functionality)
+      + [Login](#login)
+      + [Main Window](#main-window)
+      + [Run Table](#run-table)
+      + [Save](#save)
+      + [New Query](#new-query)
+         - [Running The New Query](#running-the-new-query)
+   * [Patterns](#patterns)
+      + [Lazy](#lazy)
+      + [Factory](#factory)
+      + [Singleton](#singleton)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="sqlviewer"></a>
 # SQLViewer
+<!-- TOC --><a name="context"></a>
 ## Context
 Project of the subject of Accessing Data From Program Code of the Software Engineering degree at Algebra University College (Zagreb). The project consist in a  replica of the SSMS (SQL Server Management Studio).
 The project is completely done in C# with the Form Window framework. Part of the code is done with the help of the Professor Daniel Bele.
+<!-- TOC --><a name="functionality"></a>
 ## Functionality
+<!-- TOC --><a name="login"></a>
 ### Login
 The application has a SQL Server Authentication in order to use it. So it handle non registered users and so on.
 <img width="256" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/dd291694-98ad-4d95-a978-fd6baebfefa9">
+<!-- TOC --><a name="main-window"></a>
 ### Main Window
 Once the user has been aunthenticated so username and passwords are correct, then main screen will show:
   - On the top three buttons:
@@ -17,11 +40,13 @@ Once the user has been aunthenticated so username and passwords are correct, the
 
 <img width="693" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/ce88cfc8-da58-40c8-a97e-7c1a1d9ade23">
 
+<!-- TOC --><a name="run-table"></a>
 ### Run Table
 When the run button is clicked, automaticaly, the content of the selected table or view will be shown.
 
 <img width="694" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/42fb348c-b3f4-4c2b-a76e-96aafe4c9453">
 
+<!-- TOC --><a name="save"></a>
 ### Save
 When the save button is clicked, the user will have the option to choose where to save the table or view in a XML format.
 
@@ -31,6 +56,7 @@ This is how the XML file will look like:
 
 <img width="801" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/25445ac3-9409-4239-8c55-1c74cf6087d6">
 
+<!-- TOC --><a name="new-query"></a>
 ### New Query
 When the new querey button is clicked, a new completely window will appear. This window consist in:
   - In the top part a text-box where the user will write the query.
@@ -41,6 +67,7 @@ When the new querey button is clicked, a new completely window will appear. This
   
 <img width="558" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/030c9b60-eea5-4947-9121-3524858c575b">
 
+<!-- TOC --><a name="running-the-new-query"></a>
 #### Running The New Query
 When running the query, if it is a `Select` query, the application will show the table as it is shown when the run table action. The errors happened in the query will be shown in the message-box. Here there are some examples of how the run query works:
 
@@ -50,11 +77,15 @@ When running the query, if it is a `Select` query, the application will show the
 <img width="476" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/f419f08b-6db9-4e0b-a840-36133d3989e9">
 <img width="405" alt="image" src="https://github.com/MrCharlesSG/SQLViewer/assets/94635721/de140205-2d1e-46e3-a211-7c4480787cf0">
 
+<!-- TOC --><a name="patterns"></a>
 ## Patterns
 The patterns used in this project are:
+<!-- TOC --><a name="lazy"></a>
 ### Lazy
 The Lazy pattern it is mostly used by the tree view. So this tree view will load only what he needs when a node is expanded. All the entities (tables, views and procedures) inside the `database` object are lazy properties.
+<!-- TOC --><a name="factory"></a>
 ### Factory
 The factory pattern is used to create objects that implements the `IRepository` interface. 
+<!-- TOC --><a name="singleton"></a>
 ### Singleton
 The factory of `IRepository`s is a singleton.
